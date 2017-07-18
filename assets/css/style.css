@@ -218,7 +218,7 @@ p {
 
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 770px) and (orientation: portrait) {
 
 	#navLinks {
 
@@ -232,9 +232,31 @@ p {
 
 	}
 
-		#mainPage {
+	#mainPage {
 
 		margin-top: 50%;
+
+	}
+
+}
+
+@media screen and (max-width: 770px) and (orientation: landscape) {
+
+	#navLinks {
+
+		display: none;
+
+	}
+
+	#mainTitle {
+
+		display: none;
+
+	}
+
+	#mainPage {
+
+		margin-top: 30%;
 
 	}
 
