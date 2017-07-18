@@ -19,6 +19,12 @@ h1 {
 
 }
 
+#navbarContainer {
+
+	border-bottom: 1px white solid;
+
+}
+
 #brand {
 
 	color: #FFFFFF;
@@ -38,7 +44,7 @@ h1 {
 #laptop {
 
 	color: #FFFFFF;
-	font-size: 300px;
+	font-size: 20vmin;
 	display: inline-block;
 	text-align: center;
 	width: 100%;
@@ -53,9 +59,15 @@ h1 {
 
 }
 
+#mainPage {
+
+	margin-top: 20%;
+
+}
+
 #mainRow {
 
-	margin-top: 10%;
+	//margin-top: 20%;
 
 }
 
@@ -142,6 +154,42 @@ h2 {
 
 }
 
+#img3 {
+
+	background: url("../image/technology_blur.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	height: 100vh;
+  	//opacity: 0.75;
+
+}
+
+#portfolioTitle {
+
+	margin-top: 5%;
+
+}
+
+.portfolioRow {
+
+	margin-top: 3%;
+
+
+}
+
+#connectRow {
+
+	background-color: #444444;
+
+}
+
+#connectTitle {
+
+	margin-top: 5%;
+
+}
 
 .firstChar {
   color: #903;
@@ -170,8 +218,25 @@ p {
 
 }
 
-img {
+@media screen and (max-width: 770px) {
 
+	#navLinks {
 
+		display: none;
+
+	}
+
+	#mainTitle {
+
+		display: none;
+
+	}
+
+		#mainPage {
+
+		margin-top: 50%;
+
+	}
 
 }
+
