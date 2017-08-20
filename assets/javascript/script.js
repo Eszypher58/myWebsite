@@ -21,7 +21,26 @@ $(document).ready(function(){
 
 		}
 
-		
+		$('.hideItem').each( function(i){
+
+			//console.log("hide triggered");
+
+				var bottom_of_object = $(this).offset().top + $(this).height()/5;
+				console.log("element height:" + $(this).height())
+			//console.log("botObj:" + bottom_of_object);
+
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+			//	console.log("botWin:" + bottom_of_window);
+
+	        /* If the object is completely visible in the window, fade it in */
+				if( bottom_of_window > bottom_of_object ){
+			
+					$(this).animate({'opacity':'1'}, 1000);
+
+				}
+
+		}); 
 
 
 	})
