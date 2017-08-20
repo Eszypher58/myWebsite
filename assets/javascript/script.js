@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	$("#aboutMePort").hide();
+
 	$(window).scroll(function(){
 
 		//console.log("scrolling triggered");
@@ -24,8 +26,56 @@ $(document).ready(function(){
 
 	})
 
-	$()
+	$("#startButton").on("click", function(){
 
+		//console.log("clicked");
+		$("html,body").animate({
+
+			scrollTop: ($("#aboutMe").offset().top - 50)
+
+		}, "slow");
+
+
+	});
+
+	$("li").on("click", function(){
+
+		var link = $(this).children().attr("data_moveto");
+
+		//console.log(link);
+
+		//console.log("clicked");
+		$("html,body").animate({
+
+			scrollTop: ($("#" + link).offset().top - 50)
+
+		}, "slow");
+
+	});
+
+	$(document).on("click", ".cart", function(){
+
+		var id = $(this).attr("id");
+
+		console.log(id);
+
+		if (id === "aboutMePara") {
+
+			$(this).hide(500);
+			$("#Lcircle").attr("class", "fa fa-circle-o");
+			$("#Rcircle").attr("class", "fa fa-circle")
+			$("#aboutMePort").show(500);
+
+		} else {
+
+			$(this).hide(500);
+			$("#Lcircle").attr("class", "fa fa-circle");
+			$("#Rcircle").attr("class", "fa fa-circle-o")
+			$("#aboutMePara").show(500);
+
+		}
+
+	});
 
 
 

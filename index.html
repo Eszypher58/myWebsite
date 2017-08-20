@@ -15,12 +15,16 @@
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-		<!-- css -->
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 
 		<link rel="stylesheet" type="text/css" href="assets/css/typeplate.css">
 
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="assets/css/font-awesome-animation.min.css">
+
+				<!-- css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	</head>
 
@@ -32,11 +36,12 @@
 
 				<div class="container" id="navbarContainer">
 
-					<a class="navbar-brand typl8-gamma" id="brand" href="#">Hao.Vision</a>
+					<a class="titlebar navbar-brand typl8-gamma" id="brand" href="#">Hao.Vision</a>
 
-					<ul class="nav nav-pills navbar-right typl8-delta" id="navLinks">
+					<ul class="titlebar nav nav-pills navbar-right typl8-delta" id="navLinks">
 						<li><a href="#">Home</a></li>
-						<li><a href="#aboutMe">About Me</a></li>
+						<li><a data_moveto="aboutMe">About Me</a></li>
+						<li><a data_moveto="whatIDo">What I Do</a></li>
 						<li><a href="#">Messages</a></li>
 					</ul>
 
@@ -57,9 +62,9 @@
 							
 						<span class="fa fa-laptop fa-5x" id="laptop"></span>
 
-						<h1 id="mainTitle" class="text-center typl8-giga">Hao.Vision</h1>
+						<h1 id="mainTitle" class="text-center typl8-giga faa-float faa-slow animated">Hao.Vision</h1>
 
-						<p class="text-center typl8-gamma">A Full-Stack Web Developer's Landing Page</p>
+						<p class="text-center typl8-gamma" id="subtitle">A Full-Stack Web Developer's Landing Page</p>
 						
 					</div>
 
@@ -75,7 +80,7 @@
 
 					<div class="col-md-4">
 						
-						<span class="fa fa-power-off fa-5x" id="startButton"></span>
+						<span class="fa fa-power-off fa-5x faa-pulse animated" id="startButton"></span>
 
 					</div>
 
@@ -87,12 +92,38 @@
 
 		</div>
 
-		<div class="container-fluid">
+		<div class="container-fluid" id="aboutMe">
 
-			<div class="container" id="aboutMe">
+			<div class="container">
 			
 				<div class="row">
+
+					<div class="col-md-1 picArrow">
+						
+						<span class="fa fa-angle-double-right fa-5x faa-flash faa-slow animated" data_position="left"></span>
 					
+					</div>
+
+					<div class="col-md-10">
+						
+						<h1 class="text-center typl8-alpha" id="aboutMeName">Hi, I am Stanley Wang.</h1> 
+							<hr>
+							<p class="text-justify typl8-gamma cart" id="aboutMePara">
+							<span class="firstChar">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras at dictum diam, eu ornare purus. Pellentesque dui risus, efficitur id convallis eget, cursus tristique dui. Donec vel magna euismod neque tempor dignissim at vel felis. Vivamus porta efficitur dolor eget venenatis. Nulla consectetur massa erat, a tempus nisi pellentesque nec. In feugiat fringilla consectetur. Etiam in consequat velit, ac auctor erat. Maecenas lorem libero, interdum eu elementum eu, sollicitudin nec neque. Ut pharetra blandit mauris, in auctor massa sagittis et. Fusce lobortis nulla eget nibh tincidunt gravida. Sed feugiat dictum sapien nec dignissim. Mauris maximus auctor congue. Mauris blandit sed turpis nec posuere.
+							</p>
+
+							<img id="aboutMePort" class="img-responsive center-block cart" src="http://dreamicus.com/data/cat/cat-01.jpg">
+
+
+					</div>
+
+					<div class="col-md-1 picArrow">
+
+						<span class="fa fa-angle-double-left fa-5x faa-flash faa-slow animated" data_position="right" id="arrowR"></span>
+
+					</div>
+					
+					<!--
 					<div class="col-md-6">
 						
 						<img class="img-responsive center-block" src="http://dreamicus.com/data/cat/cat-01.jpg">
@@ -108,6 +139,19 @@
 							</p>
 
 
+					</div>
+					
+					-->
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-12 indicator">
+						
+						<span id="Lcircle" class="fa fa-circle"></span>
+
+						<span id="Rcircle" class="fa fa-circle-o"></span>
+						
 					</div>
 
 				</div>
@@ -135,7 +179,8 @@
 					<div class="text-center col-md-3">
 						
 						<span></span>
-						<h1 class="typl8-beta">HTML5/CSS/JAVASCRIPT</h1>
+						<h1 class="typl8-beta iDoDetail">HTML5</h1>
+						<img class="img-responsive center-block iDoImg" src="assets/image/HTML5_Badge_512.png">
 						<p>some marketing description goes here</p>
 
 					</div>
@@ -143,7 +188,8 @@
 					<div class="text-center col-md-3">
 						
 						<span></span>
-						<h1 class="typl8-beta">Bootstrap/Jquery</h1>
+						<h1 class="typl8-beta iDoDetail">CSS3</h1>
+						<img class="img-responsive center-block iDoImg" src="assets/image/CSS3_Badge_512.png">
 						<p>some marketing description goes here</p>
 
 					</div>
@@ -151,7 +197,8 @@
 					<div class="text-center col-md-3">
 						
 						<span></span>
-						<h1 class="typl8-beta">Node.js/React</h1>
+						<h1 class="typl8-beta iDoDetail">JavaScript</h1>
+						<img class="img-responsive center-block iDoImg" src="assets/image/JS_Badge_400.png">
 						<p>some marketing description goes here</p>
 
 					</div>
@@ -159,7 +206,48 @@
 					<div class="text-center col-md-3">
 						
 						<span></span>
-						<h1 class="typl8-beta">Code stuff</h1>
+						<h1 class="typl8-beta iDoDetail">Bootstrap</h1>
+						<img class="img-responsive center-block iDoImg" src="assets/image/bootstrap.png">
+						<p>some marketing description goes here</p>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+					
+					<div class="text-center col-md-3">
+						
+						<span></span>
+						<h1 class="typl8-beta iDoDetail">jQuery</h1>
+						<img class="img-responsive center-block iDoImg" src="assets/image/jquery.png">
+						<p>some marketing description goes here</p>
+
+					</div>
+
+					<div class="text-center col-md-3">
+						
+						<span></span>
+						<h1 class="typl8-beta iDoDetail">Node.js</h1>
+						<img class="img-responsive center-block iDoImg" src="assets/image/nodejs.png">
+						<p>some marketing description goes here</p>
+
+					</div>
+
+					<div class="text-center col-md-3">
+						
+						<span></span>
+						<h1 class="typl8-beta iDoDetail">React</h1>
+						<img class="img-responsive center-block iDoImg" src="">
+						<p>some marketing description goes here</p>
+
+					</div>
+
+					<div class="text-center col-md-3">
+						
+						<span></span>
+						<h1 class="typl8-beta iDoDetail">Code Stuff</h1>
+						<img class="img-responsive center-block iDoImg" src="">
 						<p>some marketing description goes here</p>
 
 					</div>
