@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 	})
 
-	$("#startButton").on("click", function(){
+	$("#startButton").on("click touchstart", function(){
 
 		//console.log("clicked");
 		$("html,body").animate({
@@ -53,7 +53,7 @@ $(document).ready(function(){
 
 	});
 
-	$(document).on("click", ".cart", function(){
+	$(document).on("click touchstart", ".cart", function(){
 
 		var id = $(this).attr("id");
 
